@@ -22,9 +22,9 @@ Q: Quit Program
 
 Please enter your choice: """)
     if option == "A" or option == "a":
-        register()
+        access('register')
     elif option == "B" or option == "b":
-        login()
+        access('login')
     elif option == "Q" or option == "q":
         time.sleep(2)
         sys.exit()
@@ -122,7 +122,6 @@ def get_random_pw():
 
     return "".join(password)
 main()
-access(option)
 if (granted):
     print("Welcome")
     print(name)
